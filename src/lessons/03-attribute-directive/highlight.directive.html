@@ -1,0 +1,12 @@
+<h1>First Attribute Directive</h1>
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="color" (click)="color='red'">Red
+  <input type="radio" name="color" (click)="color='yellow'">Yellow
+  <input type="radio" name="color" (click)="color='brown'">Brown
+</div>
+<p [myHighlight]="color">Color me!</p>
+
+<p [myHighlight]="color" [defaultColor]="'violet'">
+  Color me too!
+</p>
